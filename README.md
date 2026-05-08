@@ -220,7 +220,7 @@ Example:
 ├── firmware/
 │   └── main.c          # ATmega32 firmware (AVR-GCC)
 ├── app/
-│   └── App.tsx         # React Native mobile app
+│   └── App.JS         # React Native mobile app
 ├── docs/
 │   └── report.pdf      # Full project report
 └── README.md
