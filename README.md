@@ -182,7 +182,7 @@ The ISR increments `int0_press_ms` and `int1_press_ms` while their respective pr
 
 ## Mobile App
 
-Source: [`app/App.tsx`](app/App.tsx)
+Source: [`App/App.JS`](App/App.JS)
 
 Built with **React Native** (TypeScript). Requires Android 6+.
 
