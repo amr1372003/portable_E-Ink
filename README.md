@@ -48,19 +48,19 @@ A low-power student organizer built on an **ATmega32** microcontroller and a **2
 ## System Architecture
 
 ```
-┌─────────────────────┐        CSV over       ┌──────────┐       UART 9600      ┌──────────────────────┐
-│  React Native App   │ ──── RFCOMM / BT ───▶ │  HC-06   │ ──── baud, \n ─────▶ │     ATmega32         │
-│  Android (TypeScript│                        │ BT bridge│                       │  1 MHz internal RC   │
-└─────────────────────┘                        └──────────┘                       └──────────┬───────────┘
-                                                                                             │
-                                                                             ┌───────────────┼───────────────┐
-                                                                             │               │               │
-                                                                      SPI bus          INT0 / INT1        ADC
-                                                                             │               │               │
-                                                                    ┌────────┴──────┐ ┌──────┴──────┐  Battery
-                                                                    │ E-paper 2.13" │ │  2 buttons  │  voltage
-                                                                    │  250×122 px   │ │  Down / Up  │
-                                                                    └───────────────┘ └─────────────┘
+┌─────────────────────┐        CSV over         ┌─────────────────────┐       UART 9600       ┌──────────────────────┐
+│  React Native App   │ ──── RFCOMM / BT ───▶   │      HC-06         │ ──── baud, \n ─────▶  │     ATmega32         │
+│  Android (TypeScript│                         │     BT bridge       │                       │  1 MHz internal RC   │
+└─────────────────────┘                         └─────────────────────┘                       └──────────┬───────────┘
+                                                                                                         │
+                                                                                         ┌───────────────┼───────────────┐
+                                                                                         │               │               │
+                                                                                     SPI bus          INT0 / INT1        ADC
+                                                                                         │               │               │
+                                                                                ┌────────┴──────┐ ┌──────┴──────┐  Battery
+                                                                                │ E-paper 2.13" │ │  2 buttons  │  voltage
+                                                                                │  250×122 px   │ │  Down / Up  │
+                                                                                └───────────────┘ └─────────────┘
 ```
 
 ---
@@ -222,7 +222,7 @@ Example:
 ├── app/
 │   └── App.JS         # React Native mobile app
 ├── docs/
-│   └── report.pdf      # Full project report
+│   └── E-Ink.pdf      # Full project report
 └── README.md
 ```
 
