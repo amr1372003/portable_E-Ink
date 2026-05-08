@@ -102,7 +102,7 @@ A low-power student organizer built on an **ATmega32** microcontroller and a **2
 
 ## Firmware
 
-Source: [`Embedded code/main.c`](Embedded code/main.c)
+Source: [`Embedded code/main.c`](Embedded%20code/main.c)
 
 Toolchain: `avr-gcc` · Programmer: `avrdude` (USBasp or compatible)
 
@@ -182,7 +182,7 @@ The ISR increments `int0_press_ms` and `int1_press_ms` while their respective pr
 
 ## Mobile App
 
-Source: [`App/App.JS`](App/App.JS)
+Source: [`App/App.js`](App/App.js)
 
 Built with **React Native** (TypeScript). Requires Android 6+.
 
