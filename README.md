@@ -102,7 +102,7 @@ A low-power student organizer built on an **ATmega32** microcontroller and a **2
 
 ## Firmware
 
-Source: [`firmware/main.c`](firmware/main.c)
+Source: [`Embedded code/main.c`](Embedded code/main.c)
 
 Toolchain: `avr-gcc` · Programmer: `avrdude` (USBasp or compatible)
 
